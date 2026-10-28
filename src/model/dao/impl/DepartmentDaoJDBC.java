@@ -9,11 +9,11 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DepartamentDaoJDBC implements DepartmentDao {
+public class DepartmentDaoJDBC implements DepartmentDao {
 
     private Connection conn;
 
-    public DepartamentDaoJDBC(Connection conn) {
+    public DepartmentDaoJDBC(Connection conn) {
         this.conn = conn;
     }
 
