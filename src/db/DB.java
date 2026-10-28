@@ -9,7 +9,7 @@ public class DB {
     private static Connection conn = null;
 
     public static Connection getConnection(){
-        if(conn != null){
+        if(conn == null){
             try {
                 Properties props = loadProperties();
                 String url = props.getProperty("dburl");
