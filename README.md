@@ -19,7 +19,7 @@ Este projeto demonstra como separar a lógica de acesso a dados das regras de ne
 
 O domínio é simples: **vendedores** (`Seller`) que pertencem a um **departamento** (`Department`). Para cada entidade existe uma interface DAO com as operações de CRUD e uma implementação JDBC concreta, instanciada através de uma **fábrica** (`DaoFactory`).
 
-### Conceitos praticados
+### Conceitos aplicados
 
 - Padrão de projeto **DAO** com interfaces e implementações desacopladas
 - Padrão **Factory** para injeção da implementação (`DaoFactory`)
