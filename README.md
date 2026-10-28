@@ -145,8 +145,8 @@ cd demoDaoJDBC
 O projeto espera as tabelas `department` e `seller`. Um script de referência, compatível com as consultas da aplicação:
 
 ```sql
-CREATE DATABASE coursejdbc;
-USE coursejdbc;
+CREATE DATABASE aplication;
+USE application;
 
 CREATE TABLE department (
   Id   INT          NOT NULL AUTO_INCREMENT,
