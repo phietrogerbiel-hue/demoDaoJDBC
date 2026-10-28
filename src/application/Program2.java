@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Program2 {
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        DepartmentDao departmentDao = DaoFactory.createDepartamentDao();
+        DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
         List<Department> list = new ArrayList<>();
 
         System.out.println("===TEST 1: department findById===");

@@ -41,7 +41,7 @@ classDiagram
     class Program { +main() }
     class DaoFactory {
         +createSellerDao() SellerDao
-        +createDepartamentDao() DepartmentDao
+        +createDepartmentDao() DepartmentDao
     }
 
     class SellerDao {
@@ -63,7 +63,7 @@ classDiagram
     }
 
     class SellerDaoJDBC
-    class DepartamentDaoJDBC
+    class DepartmentDaoJDBC
     class DB {
         +getConnection() Connection
         +closeConnection()
@@ -73,9 +73,9 @@ classDiagram
     DaoFactory ..> SellerDao
     DaoFactory ..> DepartmentDao
     SellerDao <|.. SellerDaoJDBC
-    DepartmentDao <|.. DepartamentDaoJDBC
+    DepartmentDao <|.. DepartmentDaoJDBC
     SellerDaoJDBC --> DB
-    DepartamentDaoJDBC --> DB
+    DepartmentDaoJDBC --> DB
 ```
 
 A aplicação conhece apenas as **interfaces** (`SellerDao`, `DepartmentDao`) e a `DaoFactory`. Trocar o JDBC por outra tecnologia exigiria apenas uma nova implementação e uma alteração na fábrica.
@@ -100,7 +100,7 @@ demoDaoJDBC/
 │       │   ├── DepartmentDao.java
 │       │   ├── SellerDao.java
 │       │   └── impl/
-│       │       ├── DepartamentDaoJDBC.java
+│       │       ├── DepartmentDaoJDBC.java
 │       │       └── SellerDaoJDBC.java
 │       └── entities/
 │           ├── Department.java
